@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .       # Diretório onde está o Dockerfile
+      dockerfile: Dockerfile
+    container_name: flask_app_compose  # Nome do container (opcional, mas bom para identificar)
+    ports:
+      - "5000:5000"    # Porta externa:porta interna
+    volumes:
+      - ./app:/app     # Mapeia o código local dentro do container (opcional)
+    restart: unless-stopped  # Reinicia se o container parar inesperadamente
