@@ -2,4 +2,4 @@
 
 Clone o repositório:
 ```bash
-docker-compose up --build
+http://localhost:<porta>/docs
