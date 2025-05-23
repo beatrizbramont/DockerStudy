@@ -2,5 +2,4 @@
 
 Clone o repositório:
 ```bash
-git clone <URL_DO_REPOSITORIO>
-cd nome-do-projeto
+docker-compose up --build
